@@ -1,0 +1,22 @@
+#clients{
+  @extend .container-fluid;
+  padding: 60px 0 40px 0;
+  
+  span{
+    display: block;
+    text-align: center;
+    font-size: 22px;
+    color:#333333;
+  }
+  ul{
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    
+    li{
+      list-style: none;
+      display: inline-block;
+      padding: 30px;
+    }
+  }
+}

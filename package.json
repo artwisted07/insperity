@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "build:vendor": "browserify -r jquery -p [ minifyify --no-map ] > public/js/vendor.bundle.js",
-    "build:app": "browserify -x jquery -t babelify -p [ minifyify --no-map ] src/app.js > public/js/app.bundle.js",
+    "build:app": "browserify  -t babelify -p [ minifyify --no-map ] src/app.js > public/js/app.bundle.js",
     "build": "npm run build:vendor && npm run build:app",
     "build:css": "node-sass --include-path scss src/scss/styles.scss public/css/styles.css",
     "watch:css": "node-sass -w src/scss/styles.scss  public/css/styles.css --importer node_modules/node-sass-import",
@@ -18,6 +18,7 @@
     "babel-core": "^6.14.0",
     "babel-preset-es2015": "^6.14.0",
     "babelify": "^7.3.0",
+    "bootstrap": "^3.3.7",
     "browserify": "^13.1.0",
     "concurrently": "^2.2.0",
     "jquery": "^3.1.0",

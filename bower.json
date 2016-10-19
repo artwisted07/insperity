@@ -1,0 +1,18 @@
+{
+  "name": "insperity",
+  "description": "",
+  "main": "index.js",
+  "authors": [
+    "artwisted69 <isidro.gallegos18@gmail.com>"
+  ],
+  "license": "ISC",
+  "homepage": "https://github.com/artwisted69/starter-boilerplate",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}

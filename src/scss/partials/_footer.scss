@@ -1,0 +1,31 @@
+footer#footer{
+  padding:40px 0 10px  0;
+  background-color:#eeeeee;
+  border-top:1px solid #eee;
+  
+  span{
+    display: block;
+    padding: 5px;
+    margin-bottom: 10px;
+    p{
+      font-size: 17px;
+    }
+    &.phone{
+      text-align: center;
+       @media (min-width: $screen-md-min) {
+        display: inline-block;
+       float:right;
+      }
+    }
+    
+    &.copyright{
+      text-align: center;
+        @media (min-width: $screen-md-min) {
+        display: inline-block;
+       float:left;
+      }
+    }
+    
+  }
+}
+

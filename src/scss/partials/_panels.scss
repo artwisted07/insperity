@@ -1,0 +1,71 @@
+  .content{
+    @extend .clearfix;
+    padding: 40px 20px 30px 40px;
+    width:100%;
+    
+    &.aboutC{
+      width:100%;
+      @media (min-width: 1200px) {
+        width:70%;
+      }
+    }
+    
+    p{
+      font-size: 1.3em;
+    }
+    
+    &.green{
+      position: relative;
+      background-color:#4c8c2b;
+      padding:20px;
+      
+      &::after{
+        display: block;
+        content: "";
+        position: absolute;
+        z-index: 100;
+        bottom:-28px;
+        left:50px;
+        background:url('../images/green-arrow.png') top center no-repeat;
+        width:50px;
+        height: 30px;
+      }
+      img{
+        display: block;
+        margin: 0 auto;
+      }
+      
+      h3{
+        display: block;
+        color:#fff;
+        text-align: center;
+        font-family: 'Roboto', serif;
+      }
+    }
+    &.gray{
+      background-color:#f0f0f0;
+      padding-left: 20px;
+      padding-right: 20px;
+      padding-bottom: 10px;
+      margin-bottom: 20px;
+      
+      .downloadResults{
+        display: none;
+        font-size: 13px;
+      }
+      span{
+        text-align: center;
+        display: block;
+      }
+      .btn.btn-block.download{
+        @extend .btn-default;
+        border: 1px solid #d9a102;
+        border-radius: 5px;
+        padding: 20px 0;
+        margin-bottom: 20px;
+        color:#000;
+        font-weight: bold;
+        background-color:#ffdc24;
+      }
+    }
+  }
